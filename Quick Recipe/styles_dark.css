@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Qwitcher+Grypen:wght@700&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+    
+  
+}
+img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+section{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px 0;
+    background-color:black;
+}
+.mainContainer{
+    width:90%;
+    height:100%;
+    max-width: 1200px;
+    margin:0 auto;
+
+}
+.logo{
+    text-align: center;
+    color:white;
+    font-size:4rem;
+    margin-bottom: 30px;
+    font-family: 'Qwitcher Grypen';
+}
+
+form{
+    width:100%;
+    max-width: 400px;
+    margin:10px auto;
+    background-color: rgba(230, 171, 190, 0.392);
+    border-radius: 50px;
+    height:50px;
+
+}
+form input{
+    width:100%;
+    background-color: transparent;
+    padding:10px;
+    padding-left:30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size:1.5rem;
+    color:rgb(252, 252, 252);
+}
+form ion-icon{
+    width:10%;
+    font-size:2rem;
+    margin-top:10px;
+    margin-left:-100px;
+    color:white;
+    position: absolute;
+}
+.foodResult{
+    margin-top:50px;
+    width:100%;
+    display:grid;
+    grid-gap:50px;
+    grid-template:auto/repeat(auto-fit,minmax(300px,1fr));
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    
+}
+
+.foodItem{
+    width:100%;
+    border-radius:10px;
+    background-color: rgba(221, 215, 215, 0.106);
+    padding:15px;
+    overflow:hidden;
+}
+
+.foodItem img{
+    width:100%;
+    height:300px;
+    border-radius:5px;
+}
+
+.foodItem .foodContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foodItem .foodName{
+    color:rgba(255, 255, 255, 0.876);
+    margin:20px 10px 0 0;
+    font-size: 1.5rem;
+    font-weight:500;
+}
+
+.viewRecipe{
+    text-decoration: none;
+    text-align:center;
+    width:120px;
+    margin:10px 0;
+    padding:10px 0;
+    background-color: #821343;
+    color:white;
+    align-self:flex-start;
+
+}
+
+.foodDescription{
+    color:white;
+    font-size: 1rem;
+    letter-spacing:.05rem;
+    line-height: 3rem;
+}
+
+
+@keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "S"; }
+    2.2791%, 25.0698% { content: "Se"; }
+    3.4186%, 23.9302% { content: "Sea"; }
+    4.5581%, 22.7907% { content: "Sear"; }
+    5.6977%, 21.6512% { content: "Searc"; }
+    6.8372%, 20.5116% { content: "Search"; }
+    
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "F"; }
+    33.0465%, 49.0000% { content: "Fo"; }
+    34.1860%, 47.8605% { content: "Foo"; }
+    35.3256%, 46.7209% { content: "Food"; }
+    
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "R"; }
+    56.9767%, 72.9302% { content: "Re"; }
+    58.1163%, 71.7907% { content: "Rec"; }
+    59.2558%, 70.6512% { content: "Reci"; }
+    60.3953%, 69.5116% { content: "Recip"; }
+    61.5349%, 68.3721% { content: "Recipe";}}
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      
+      .cursorChanger {
+        --caret: currentcolor;
+        font-family: 'Qwitcher Grypen';
+      }
+      
+      .cursorChanger::before {
+        content: "";
+        animation: typing 13.5s infinite;
+      }
+      
+      .cursorChanger::after {
+        content: "";
+        border-right: 1px solid var(--caret);
+        animation: blink 0.5s linear infinite;
+      }
+      
+      .cursorChanger.thick::after {
+        border-right: 1ch solid var(--caret);
+      }
+      
+      .cursorChanger.nocaret::after {
+        border-right: 0;
+      }
+      
+      
+      @media (prefers-reduced-motion) {
+        .cursorChanger::after {
+          animation: none;
+        }
+      
+      
+      }
+      #indexLogo{
+        height: 500px;
+      }
+
+     .mainContainer #logo{
+      position: relative;
+      width:300px;
+      
+  
+     }
+     .imgdiv{
+      width:100%;
+      margin:10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+     }
+     #homelogo{
+      width:10%;
+     }
+     #Logo{
+      width:10%;
+      margin-bottom:20px;
+      margin-top:-50px;
+     }
+     
+     #homelogo{
+      height:50px;
+      width:50px;
+
+     }
+    
+     .home{
+      margin-top:-100px;
+      display: flex;
+      justify-content: right;
+     }  
+     .switch {
+      margin-top:15px;
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 24px;
+    }
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #803864;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 25px;
+      bottom: 2px;
+      background-color: rgb(213, 160, 187);
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius:50%;
+    }
+    
+    
+    
+     .slider.round {
+      border-radius: 34px;
+    }
